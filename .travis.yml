@@ -1,0 +1,27 @@
+language: node_js
+sudo: false
+node_js:
+    - 12
+os:
+    - linux
+cache: yarn
+install: yarn
+script:
+    - yarn add codecov -g
+    - yarn build
+after_success:
+    - codecov -f coverage/*.json
+jobs:
+    include:
+        - stage: now deploy
+          if: tag IS present
+          node_js: 12
+          os: linux
+          script:
+              - yarn build
+              - now --token=$NOW_TOKEN --prod
+notifications:
+    email:
+        recipients:
+            - opensource@tagproject.ru
+        on_failure: always
