@@ -19,7 +19,7 @@ jobs:
           os: linux
           script:
               - yarn build
-              - now --prod
+              - now --token=$NOW_TOKEN --prod
 notifications:
     email:
         recipients:
