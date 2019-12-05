@@ -1,11 +1,13 @@
 {
     "compilerOptions": {
+        "jsx": "preserve",
+        "lib": ["dom", "dom.iterable", "esnext"],
         "target": "esnext",
-        "module": "commonjs",
+        "module": "esnext",
         "moduleResolution": "node",
-        "rootDir": "src",
-        "outDir": "lib",
         "newLine": "lf",
+        "baseUrl": ".",
+        "typeRoots": ["./node_modules/@types"],
         "incremental": false,
         "allowJs": false,
         "allowUnreachableCode": false,
@@ -20,14 +22,17 @@
         "pretty": true,
         "sourceMap": true,
         "strict": true,
-        "declaration": true,
         "noImplicitAny": true,
         "strictNullChecks": true,
         "removeComments": true,
         "resolveJsonModule": true,
         "esModuleInterop": true,
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmit": true,
+        "isolatedModules": true
     },
-    "include": ["src/**/*.ts"],
-    "exclude": ["node_modules", "lib"]
+    "exclude": ["node_modules", "**/*.spec.ts", "**/*.spec.tsx", "**/*.test.ts", "**/*.test.tsx"],
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "jest.setup.js"]
 }

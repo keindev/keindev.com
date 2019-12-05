@@ -30,25 +30,11 @@
         "**/.vscode/**",
         "**/.yarnclean",
         "**/tsconfig.json",
+        "**/.eslintrc",
+        "jest.config.js",
+        "jest.setup.js",
         "CHANGELOG.md",
         "LICENSE"
     ],
-    "words": [
-        "deepmerge",
-        "findup",
-        "tasktree",
-        "changelogrc",
-        "gitlab",
-        "dependabot",
-        "cosmiconfig",
-        "pval",
-        "pver",
-        "keindev",
-        "filepath",
-        "EDITMSG",
-        "deps",
-        "SPDX",
-        "plusplus",
-        "cond"
-    ]
+    "words": ["keindev"]
 }
