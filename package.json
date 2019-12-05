@@ -15,7 +15,7 @@
     "scripts": {
         "clean": "rimraf coverage",
         "spellcheck": "cspell -c .vscode/cspell.json --no-summary \"pages/**/*.ts\" \"pages/**/*.tsx\" \"components/**/*.ts\" \"components/**/*.tsx\"",
-        "lint": "eslint . --ignore-path .gitignore --ext .ts,.tsx",
+        "lint": "eslint . --ext .ts,.tsx",
         "test": "jest --env=jsdom",
         "changelog": "changelog generate",
         "dev": "next",
