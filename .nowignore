@@ -3,7 +3,6 @@ coverage
 media
 src
 node_modules
-.vscode
 .env
 .editorconfig
 .gitattributes
