@@ -2,6 +2,7 @@
     "name": "keindev.com",
     "version": "0.1.0",
     "description": "Personal web page",
+    "homepage": "https://keindev.com",
     "repository": {
         "type": "git",
         "url": "https://github.com/keindev/keindev.com.git"
@@ -29,7 +30,8 @@
     "dependencies": {
         "next": "^9.1.4",
         "react": "^16.12.0",
-        "react-dom": "^16.12.0"
+        "react-dom": "^16.12.0",
+        "react-ga": "^2.7.0"
     },
     "devDependencies": {
         "@babel/core": "^7.7.4",
@@ -56,6 +58,7 @@
         "now": "^16.6.0",
         "npm-run-all": "^4.1.5",
         "prettier": "^1.19.1",
+        "prop-types": "^15.7.2",
         "rimraf": "^3.0.0",
         "ts-jest": "^24.2.0",
         "typescript": "^3.7.3"
