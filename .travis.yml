@@ -1,21 +1,23 @@
 language: node_js
+os: linux
+node_js:
+    - 12
 sudo: false
 cache: yarn
 install: yarn
 script:
-    - yarn add now -g
-    - yarn add codecov -g
+    - yarn global add now
+    - yarn global add codecov
     - yarn build
 after_success:
     - codecov -f coverage/*.json
-jobs:
-    include:
-        - stage: Deploy
-          if: tag IS present
-          node_js: 12
-          os: linux
-          provider: script
-          script: now --token=$NOW_TOKEN --prod
+deploy:
+    provider: script
+    script: now --token=$NOW_TOKEN --prod
+    cleanup: false
+    if: tag IS present
+    on:
+        branch: master
 notifications:
     email:
         recipients:
