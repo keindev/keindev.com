@@ -31,10 +31,11 @@
         "**/.yarnclean",
         "**/tsconfig.json",
         "**/.eslintrc",
+        "**/.travis.yml",
         "jest.config.js",
         "jest.setup.js",
         "CHANGELOG.md",
         "LICENSE"
     ],
-    "words": ["keindev", "pageview"]
+    "words": ["keindev", "pageview", "clsx", "prefetch"]
 }

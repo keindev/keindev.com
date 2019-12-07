@@ -1,7 +1,15 @@
 import * as React from 'react';
+import Container from '@material-ui/core/Container';
+import Box from '@material-ui/core/Box';
+import Menu from '../components/Menu';
 
-const Home = (): React.ReactElement => {
-    return <div className="page">Hello world!!!</div>;
-};
+const HomePage = (): React.ReactElement => (
+    <Container maxWidth="xl">
+        <Menu />
+        <Container maxWidth="lg">
+            <Box my={4}></Box>
+        </Container>
+    </Container>
+);
 
-export default Home;
+export default HomePage;

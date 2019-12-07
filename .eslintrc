@@ -14,7 +14,7 @@
         "prettier/@typescript-eslint",
         "plugin:jest/recommended"
     ],
-    "plugins": ["@typescript-eslint", "jest"],
+    "plugins": ["@typescript-eslint", "jest", "jsx-a11y"],
     "rules": {
         "@typescript-eslint/member-ordering": "error",
         "max-lines-per-function": ["error", { "max": 45 }],
