@@ -34,8 +34,8 @@
         "react-ga": "^2.7.0"
     },
     "devDependencies": {
-        "@babel/core": "^7.7.4",
-        "@types/enzyme": "^3.10.3",
+        "@babel/core": "^7.7.5",
+        "@types/enzyme": "^3.10.4",
         "@types/enzyme-adapter-react-16": "^1.0.5",
         "@types/jest": "^24.0.23",
         "@types/node": "^12.12.14",
@@ -55,7 +55,7 @@
         "eslint-plugin-react": "^7.17.0",
         "husky": "^3.1.0",
         "jest": "^24.9.0",
-        "now": "^16.6.0",
+        "now": "^16.6.2",
         "npm-run-all": "^4.1.5",
         "prettier": "^1.19.1",
         "prop-types": "^15.7.2",
