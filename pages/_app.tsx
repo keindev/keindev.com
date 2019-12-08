@@ -31,7 +31,7 @@ export default class MyApp extends App {
                 <Head>
                     <title>@keindev 🤔</title>
 
-                    <link rel="manifest" href="/static/manifest.json" />
+                    <link rel="manifest" href="/manifest.json" />
                     <meta name="theme-color" content="#15202B" />
                     <meta name="description" content="content" />
                 </Head>

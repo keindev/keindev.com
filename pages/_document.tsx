@@ -11,16 +11,16 @@ export default class MyDocument extends Document {
             <html lang="en">
                 <Head>
                     <meta charSet="utf-8" />
+                    <meta name="theme-color" content={theme.palette.primary.main} />
                     <meta
                         name="viewport"
                         content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
                     />
-                    {/* PWA primary color */}
-                    <meta name="theme-color" content={theme.palette.primary.main} />
-                    <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico" />
+
+                    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
                     <link
                         rel="stylesheet"
-                        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+                        href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
                     />
                 </Head>
                 <body>
