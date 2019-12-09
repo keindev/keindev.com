@@ -42,7 +42,7 @@
         "@types/react": "^16.9.15",
         "@types/react-dom": "^16.9.4",
         "@typescript-eslint/eslint-plugin": "^2.10.0",
-        "@typescript-eslint/parser": "^2.10.0",
+        "@typescript-eslint/parser": "^2.11.0",
         "changelog-guru": "^1.0.0",
         "cspell": "^4.0.35",
         "enzyme": "^3.10.0",
