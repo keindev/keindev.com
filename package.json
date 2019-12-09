@@ -44,7 +44,7 @@
         "@typescript-eslint/eslint-plugin": "^2.10.0",
         "@typescript-eslint/parser": "^2.10.0",
         "changelog-guru": "^1.0.0",
-        "cspell": "^4.0.35",
+        "cspell": "^4.0.37",
         "enzyme": "^3.10.0",
         "enzyme-adapter-react-16": "^1.15.1",
         "enzyme-to-json": "^3.4.3",
