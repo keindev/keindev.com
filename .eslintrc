@@ -20,6 +20,7 @@
         "@typescript-eslint/interface-name-prefix": ["error", { "prefixWithI": "always" }],
         "max-lines-per-function": ["error", { "max": 45 }],
         "import/prefer-default-export": 0,
+        "react/prop-types": [2, { "ignore": ["children"] }],
         "max-len": ["error", { "code": 120 }],
         "indent": ["error", 4, { "SwitchCase": 1 }],
         "lines-between-class-members": 0,
