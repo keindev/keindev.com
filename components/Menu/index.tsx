@@ -1,26 +1,26 @@
 import * as React from 'react';
-import { AppBar, Toolbar, Typography, Box, SvgIcon } from '@material-ui/core';
-import MenuLink from './MenuLink';
-import Logo from '../public/images/logo.svg';
-import Link from './Link';
+import { AppBar, Toolbar, Box } from '@material-ui/core';
+import theme from '../../themes/dark';
+import MenuLink from '../MenuLink';
+import Link from '../Link';
 
 const Menu = (): React.ReactElement => (
-    <Box my={3} display="flex">
+    <Box my={4} display="flex">
         <AppBar position="static" elevation={0}>
             <Toolbar variant="dense">
                 <Box flexGrow={1}>
                     <Link href="/">
-                        <SvgIcon component={Logo} viewBox="0 0 160 57" style={{ width: 160, height: 57 }} />
+                        <img src="images/logo.svg" alt="logo" style={{ width: 160, height: 'auto' }} />
                     </Link>
                 </Box>
 
-                <Typography variant="h6" color="inherit">
+                <Box style={{ paddingTop: '1.5em' }} color={theme.palette.text.primary}>
                     <MenuLink label="Home" href="/" />
                     <MenuLink label="Blog" href="https://medium.com/@keindev" prefetch={false} />
                     <MenuLink label="Design" href="/design" />
                     <MenuLink label="Projects" href="/projects" />
                     <MenuLink label="Skills" href="/skills" />
-                </Typography>
+                </Box>
             </Toolbar>
         </AppBar>
     </Box>

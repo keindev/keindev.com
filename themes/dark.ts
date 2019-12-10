@@ -1,36 +1,64 @@
 import { createMuiTheme } from '@material-ui/core/styles';
-import { red } from '@material-ui/core/colors';
 
-// Create a theme instance.
 const theme = createMuiTheme({
     typography: {
-        fontFamily: [
-            '"Lato"',
-            '-apple-system',
-            'BlinkMacSystemFont',
-            '"Segoe UI"',
-            '"Helvetica Neue"',
-            'Arial',
-            'sans-serif',
-            '"Apple Color Emoji"',
-            '"Segoe UI Emoji"',
-            '"Segoe UI Symbol"',
-        ].join(','),
+        fontSize: 14,
+        fontFamily: ['"Lato"', 'sans-serif'].join(','),
+        h1: {
+            fontWeight: 700,
+            fontSize: 40,
+        },
+        h2: {
+            fontWeight: 300,
+            fontSize: 24,
+        },
     },
     palette: {
         primary: {
             main: '#15202B',
+            dark: '#334358',
+            light: '#445469',
         },
         secondary: {
-            main: '#ddd',
-        },
-        error: {
-            main: red.A400,
+            main: '#253341',
+            dark: '#8B8B8B',
+            light: '#ddd',
         },
         background: {
             default: '#15202B',
         },
+        text: {
+            primary: '#eee',
+            secondary: '#ddd',
+        },
     },
+    shadows: [
+        'none',
+        `-2px 4px 4px rgba(0, 0, 0, .32)`,
+        '-2px 4px 4px rgba(0, 0, 0, .68)',
+        'none',
+        'none',
+        'none',
+        'none',
+        'none',
+        'none',
+        'none',
+        'none',
+        'none',
+        'none',
+        'none',
+        'none',
+        'none',
+        'none',
+        'none',
+        'none',
+        'none',
+        'none',
+        'none',
+        'none',
+        'none',
+        'none',
+    ],
 });
 
 export default theme;

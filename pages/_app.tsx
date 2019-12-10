@@ -6,6 +6,8 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '../themes/dark';
 import Analytics from '../utils/Analytics';
+import Menu from '../components/Menu';
+import { Container, Box, Grid } from '@material-ui/core';
 
 export default class MyApp extends App {
     componentDidMount(): void {
@@ -32,12 +34,18 @@ export default class MyApp extends App {
                     <title>@keindev 🤔</title>
 
                     <link rel="manifest" href="/manifest.json" />
-                    <meta name="theme-color" content="#15202B" />
-                    <meta name="description" content="content" />
+                    <meta name="theme-color" content={theme.palette.primary.main} />
                 </Head>
                 <ThemeProvider theme={theme}>
                     <CssBaseline />
-                    <Component {...pageProps} />
+                    <Menu />
+                    <Container maxWidth="lg">
+                        <Box marginTop={12}>
+                            <Grid container direction="column" justify="center" alignItems="stretch">
+                                <Component {...pageProps} />
+                            </Grid>
+                        </Box>
+                    </Container>
                 </ThemeProvider>
             </React.Fragment>
         );

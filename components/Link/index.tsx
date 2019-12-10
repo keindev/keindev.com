@@ -1,7 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import * as React from 'react';
-import clsx from 'clsx';
-import { useRouter } from 'next/router';
 import NextLink, { LinkProps as NextLinkProps } from 'next/link';
 import MuiLink, { LinkProps as MuiLinkProps } from '@material-ui/core/Link';
 
@@ -38,18 +36,13 @@ type LinkProps = ILinkPropsBase & NextComposedProps & Omit<MuiLinkProps, 'ref'>;
 // A styled version of the Next.js Link component:
 // https://nextjs.org/docs/#with-link
 function Link(props: LinkProps): React.ReactElement {
-    const { activeClassName = 'active', className: classNameProps, innerRef, naked, ...other } = props;
-    const router = useRouter();
-
-    const className = clsx(classNameProps, {
-        [activeClassName]: router.pathname === props.href && activeClassName,
-    });
+    const { innerRef, naked, ...other } = props;
 
     if (naked) {
-        return <NextComposed className={className} ref={innerRef} {...other} />;
+        return <NextComposed ref={innerRef} {...other} />;
     }
 
-    return <MuiLink component={NextComposed} className={className} ref={innerRef} {...other} />;
+    return <MuiLink component={NextComposed} ref={innerRef} {...other} />;
 }
 
 // eslint-disable-next-line react/display-name
