@@ -19,7 +19,7 @@ const styles = {
         filter: `drop-shadow(${theme.shadows[1]})`,
 
         '&:hover': {
-            fill: theme.palette.secondary.light,
+            fill: theme.palette.text.primary,
             filter: `drop-shadow(${theme.shadows[2]})`,
         },
     },
@@ -27,7 +27,7 @@ const styles = {
 
 const SocialIcons = withStyles(styles)(
     ({ classes }: WithStyles<typeof styles>): React.ReactElement => (
-        <Box my={12} display="flex" justifyContent="center">
+        <Box my={8} display="flex" justifyContent="center">
             <Link href="https://github.com/keindev" prefetch={false}>
                 <GitHubIcon className={classes.icon} />
             </Link>

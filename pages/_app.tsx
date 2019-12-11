@@ -31,7 +31,7 @@ export default class MyApp extends App {
         return (
             <React.Fragment>
                 <Head>
-                    <title>@keindev 🤔</title>
+                    <title>@keindev</title>
 
                     <link rel="manifest" href="/manifest.json" />
                     <meta name="theme-color" content={theme.palette.primary.main} />
