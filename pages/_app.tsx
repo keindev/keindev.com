@@ -6,10 +6,10 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '../themes/dark';
 import Analytics from '../utils/Analytics';
-import Menu from '../components/Menu';
-import { Container, Box, Grid } from '@material-ui/core';
+import Menu from '../components/menu/Menu';
+import { Grid, Container } from '@material-ui/core';
 
-export default class MyApp extends App {
+export default class Application extends App {
     componentDidMount(): void {
         Analytics.init();
         Analytics.view();
@@ -38,13 +38,12 @@ export default class MyApp extends App {
                 </Head>
                 <ThemeProvider theme={theme}>
                     <CssBaseline />
-                    <Menu />
-                    <Container maxWidth="lg">
-                        <Box marginTop={12}>
-                            <Grid container direction="column" justify="center" alignItems="stretch">
-                                <Component {...pageProps} />
-                            </Grid>
-                        </Box>
+                    <Container maxWidth="xl" style={{ height: '100vh' }}>
+                        <Menu />
+
+                        <Grid container direction="column" justify="center" alignItems="center">
+                            <Component {...pageProps} />
+                        </Grid>
                     </Container>
                 </ThemeProvider>
             </React.Fragment>

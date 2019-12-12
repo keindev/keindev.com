@@ -5,22 +5,17 @@ import { withStyles, WithStyles } from '@material-ui/core';
 import theme from '../themes/dark';
 
 const styles = {
-    icon: {
-        boxShadow: theme.shadows[2],
-        filter: `drop-shadow(${theme.shadows[2]})`,
-        // fill: 'red'
+    root: {
+        filter: `drop-shadow(${theme.shadows[1]})`,
+        width: '100%',
+        height: 'auto',
     },
 };
 
 const WorkDesk = withStyles(styles)(
     // eslint-disable-next-line max-lines-per-function
     ({ classes }: WithStyles<typeof styles>): React.ReactElement => (
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 1040 407"
-            style={{ filter: `drop-shadow(${theme.shadows[1]})` }}
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1040 407" className={classes.root}>
             <g fill={theme.palette.text.secondary}>
                 <path d="M974 406c4.4 0 8-3.1 8-7h-82c0 3.9 3.6 7 8 7h66z" />
                 <rect width="64" height="28" x="560" y="228" rx="6" />

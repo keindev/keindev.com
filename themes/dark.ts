@@ -1,9 +1,24 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
+enum Colors {
+    Black = '#15202B',
+    DarkBlue = '#253341',
+    Blue = '#334358',
+    LightBlue = '#445469',
+    Gray = '#8B8B8B',
+    Cloud = '#ddd',
+    White = '#eee',
+}
+
+enum Shadows {
+    Light = '-2px 4px 4px rgba(0, 0, 0, .32)',
+    Dark = '-2px 4px 4px rgba(0, 0, 0, .68)',
+}
+
 const theme = createMuiTheme({
     typography: {
         fontSize: 14,
-        fontFamily: ['"Lato"', 'sans-serif'].join(','),
+        fontFamily: '"Lato", sans-serif',
         h1: {
             fontWeight: 700,
             fontSize: 40,
@@ -15,26 +30,25 @@ const theme = createMuiTheme({
     },
     palette: {
         primary: {
-            main: '#15202B',
-            dark: '#334358',
-            light: '#445469',
+            main: Colors.Black,
+            dark: Colors.Blue,
+            light: Colors.LightBlue,
         },
         secondary: {
-            main: '#253341',
-            dark: '#8B8B8B'
-        },
-        background: {
-            default: '#15202B',
+            main: Colors.DarkBlue,
         },
         text: {
-            primary: '#eee',
-            secondary: '#ddd',
+            primary: Colors.White,
+            secondary: Colors.Cloud,
+        },
+        background: {
+            default: Colors.Black,
         },
     },
     shadows: [
         'none',
-        `-2px 4px 4px rgba(0, 0, 0, .32)`,
-        '-2px 4px 4px rgba(0, 0, 0, .68)',
+        Shadows.Light,
+        Shadows.Dark,
         'none',
         'none',
         'none',
@@ -58,6 +72,20 @@ const theme = createMuiTheme({
         'none',
         'none',
     ],
+    overrides: {
+        MuiMenu: {
+            paper: {
+                borderRadius: 4,
+                backgroundColor: Colors.DarkBlue,
+                boxShadow: Shadows.Dark,
+            },
+            list: {
+                borderRadius: 4,
+                backgroundColor: Colors.DarkBlue,
+                color: Colors.Cloud,
+            },
+        },
+    },
 });
 
 export default theme;
