@@ -18,7 +18,7 @@
     "rules": {
         "@typescript-eslint/member-ordering": "error",
         "@typescript-eslint/interface-name-prefix": ["error", { "prefixWithI": "always" }],
-        "max-lines-per-function": ["error", { "max": 45 }],
+        "max-lines-per-function": ["error", { "max": 100 }],
         "import/prefer-default-export": 0,
         "react/prop-types": [2, { "ignore": ["children"] }],
         "max-len": ["error", { "code": 120 }],

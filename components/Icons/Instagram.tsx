@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import * as React from 'react';
-import { SvgIcon } from '@material-ui/core';
+import SvgIcon from '@material-ui/core/SvgIcon';
 
 const InstagramIcon = ({ className }: React.SVGAttributes<SVGElement>): React.ReactElement => (
     <SvgIcon className={className} viewBox="0 0 32 32">
