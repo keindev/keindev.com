@@ -1,6 +1,7 @@
 import React from 'react';
 import App from 'next/app';
 import Router from 'next/router';
+import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -27,14 +28,23 @@ export default class Application extends App {
 
     render(): React.ReactElement {
         const { Component, pageProps } = this.props;
+        const menuHeight = 90;
 
         return (
             <ThemeProvider theme={theme}>
                 <CssBaseline />
                 <Container maxWidth="xl" style={{ height: '100vh' }}>
-                    <Menu />
+                    <Box height={menuHeight}>
+                        <Menu />
+                    </Box>
 
-                    <Grid container direction="column" justify="center" alignItems="center">
+                    <Grid
+                        container
+                        direction="column"
+                        justify="center"
+                        alignItems="center"
+                        style={{ height: `calc(100% - ${menuHeight}px)`, flexWrap: 'nowrap' }}
+                    >
                         <Component {...pageProps} />
                     </Grid>
                 </Container>

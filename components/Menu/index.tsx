@@ -23,6 +23,7 @@ const useStyles = makeStyles(theme => ({
             display: 'none',
         },
         marginTop: 20,
+        marginRight: -20,
     },
     menuButton: {
         [theme.breakpoints.up('md')]: {
@@ -34,6 +35,8 @@ const useStyles = makeStyles(theme => ({
         color: theme.palette.text.primary,
         textDecoration: 'none',
         textTransform: 'none',
+        paddingLeft: 20,
+        paddingRight: 20,
 
         '&:hover': {
             color: theme.palette.common.white,
@@ -89,6 +92,7 @@ const MainMenu = (): React.ReactElement => {
                             transformOrigin={{ vertical: 'top', horizontal: 'right' }}
                             open={Boolean(anchorEl)}
                             onClose={(): void => handleMenu(null)}
+                            onClick={(): void => handleMenu(null)}
                         >
                             {links.map(([label, href]) => (
                                 <MenuItem key={label}>

@@ -6,7 +6,9 @@ const useStyles = makeStyles(theme => ({
     root: {
         filter: `drop-shadow(${theme.shadows[1]})`,
         width: '100%',
+        maxWidth: '1024px',
         height: 'auto',
+        margin: '0 auto',
     },
 }));
 
@@ -85,7 +87,7 @@ const WorkDesk = (): React.ReactElement => {
                 <path d="M935.1 230.7l-5.4 7.2" />
                 <path d="M926.3 289.9l-6.6-8.8M955.1 289.7l-5.4 7.2M921 305l-13-3M935 281l3 13M944 277l4.5-8M963 245v7M906 245l-12-3" />
 
-                <g strokeWidth="1" >
+                <g strokeWidth="1">
                     <path d="M974.7 264.7l-5 2" />
                     <path d="M986.75 248.75l-11 5.5" />
                     <path d="M927.4 260.6l-1 5" />

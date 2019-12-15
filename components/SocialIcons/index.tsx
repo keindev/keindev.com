@@ -29,28 +29,32 @@ const SocialIcons: React.FC = () => {
     const { icon } = useStyles();
 
     return (
-        <Box my={8} display="flex" justifyContent="center">
-            <Link href="https://github.com/keindev">
-                <GitHubIcon className={icon} />
-            </Link>
-            <Link href="https://twitter.com/thekeindev">
-                <TwitterIcon className={icon} />
-            </Link>
-            <Link href="https://www.npmjs.com/~keindev">
-                <NPMIcon className={icon} />
-            </Link>
-            <Link href="https://dribbble.com/keindev">
-                <DribbbleIcon className={icon} />
-            </Link>
-            <Link href="https://www.instagram.com/kein.dev">
-                <InstagramIcon className={icon} />
-            </Link>
-            <Link href="https://t.me/keindev">
-                <TelegramIcon className={icon} />
-            </Link>
-            <Link href="https://medium.com/@keindev">
-                <MediumIcon className={icon} />
-            </Link>
+        <Box display="flex" justifyContent="center" flexWrap="wrap">
+            <Box>
+                <Link href="https://github.com/keindev">
+                    <GitHubIcon className={icon} />
+                </Link>
+                <Link href="https://twitter.com/thekeindev">
+                    <TwitterIcon className={icon} />
+                </Link>
+                <Link href="https://www.npmjs.com/~keindev">
+                    <NPMIcon className={icon} />
+                </Link>
+            </Box>
+            <Box>
+                <Link href="https://dribbble.com/keindev">
+                    <DribbbleIcon className={icon} />
+                </Link>
+                <Link href="https://www.instagram.com/kein.dev">
+                    <InstagramIcon className={icon} />
+                </Link>
+                <Link href="https://t.me/keindev">
+                    <TelegramIcon className={icon} />
+                </Link>
+                <Link href="https://medium.com/@keindev">
+                    <MediumIcon className={icon} />
+                </Link>
+            </Box>
         </Box>
     );
 };
