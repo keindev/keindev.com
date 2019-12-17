@@ -1,5 +1,6 @@
 import React from 'react';
 import App from 'next/app';
+import Head from 'next/head';
 import Router from 'next/router';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
@@ -31,24 +32,29 @@ export default class Application extends App {
         const menuHeight = 90;
 
         return (
-            <ThemeProvider theme={theme}>
-                <CssBaseline />
-                <Container maxWidth="xl" style={{ height: '100vh' }}>
-                    <Box height={menuHeight}>
-                        <Menu />
-                    </Box>
+            <>
+                <Head>
+                    <title>Daniil Ryazanov</title>
+                </Head>
+                <ThemeProvider theme={theme}>
+                    <CssBaseline />
+                    <Container maxWidth="xl" style={{ height: '100vh' }}>
+                        <Box height={menuHeight}>
+                            <Menu />
+                        </Box>
 
-                    <Grid
-                        container
-                        direction="column"
-                        justify="center"
-                        alignItems="center"
-                        style={{ height: `calc(100% - ${menuHeight}px)`, flexWrap: 'nowrap' }}
-                    >
-                        <Component {...pageProps} />
-                    </Grid>
-                </Container>
-            </ThemeProvider>
+                        <Grid
+                            container
+                            direction="column"
+                            justify="center"
+                            alignItems="center"
+                            style={{ height: `calc(100% - ${menuHeight}px)`, flexWrap: 'nowrap' }}
+                        >
+                            <Component {...pageProps} />
+                        </Grid>
+                    </Container>
+                </ThemeProvider>
+            </>
         );
     }
 }
