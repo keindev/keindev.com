@@ -9,7 +9,6 @@ export default class Document extends NextDocument {
         return (
             <html lang="en">
                 <Head>
-                    <title>Daniil Ryazanov</title>
                     <meta charSet="utf-8" />
                     <meta
                         name="viewport"
