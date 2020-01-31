@@ -68,7 +68,7 @@
         "prettier": "^1.19.1",
         "prop-types": "^15.7.2",
         "rimraf": "^3.0.1",
-        "ts-jest": "^25.0.0",
+        "ts-jest": "^25.1.0",
         "typescript": "^3.7.5"
     }
 }
