@@ -1299,10 +1299,10 @@
   resolved "https://registry.yarnpkg.com/@next/polyfill-nomodule/-/polyfill-nomodule-9.3.1.tgz#d5e12855cbb3d9a9b668fdc133d843a025dbdb6c"
   integrity sha512-4mP4m7cuobjLcjltQzPrv9/b/C/AQR3Q1PwQw/0VLkZTsC8HxCt/gbafXdyDmalDPsp6EEZ6IaHUpuFBz+QBmw==
 
-"@now/node@^1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@now/node/-/node-1.4.1.tgz#a07e22abb34d892e77fef1471f35518ddb39dbfc"
-  integrity sha512-EjP/pdBMKsEMCGQ1OLLmBGnjA3QZG1erYTrMqmDVqypeQsY1UUFTY4h1C4d6WNq33qk/nMxpcJzuAhxt+nLQyg==
+"@now/node@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@now/node/-/node-1.5.0.tgz#a159772276ae11acf87cf2620a86204abff38f1c"
+  integrity sha512-0MChNIBHsViTMPDsifTveWmMpUSUbVQYAHg9Qa8p7uF7pkfBAghyCGHSKHJVg3zxx0vVE4z+rYgaRS6xvF8qMA==
   dependencies:
     "@types/node" "*"
 
