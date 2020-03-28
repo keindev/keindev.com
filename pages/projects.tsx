@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { PackageData } from 'npm-user-packages';
 import Grid from '@material-ui/core/Grid';
 // import Box from '@material-ui/core/Box';
 import Card from '@material-ui/core/Card';
@@ -7,6 +6,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardMedia from '@material-ui/core/CardMedia';
 import Progress from '../components/Progress';
 import { makeStyles, Typography, CardContent, CardActions, Button } from '@material-ui/core';
+import { IPackage } from '../types/Package';
 
 const useStyles = makeStyles({
     card: {
@@ -18,15 +18,15 @@ const useStyles = makeStyles({
 });
 
 const ProjectsPage = (): React.ReactElement => {
-    const [packages, setPackages] = React.useState<PackageData[] | null>(null);
+    const [packages, setPackages] = React.useState<IPackage[] | null>(null);
     const classes = useStyles();
 
     // const cdn = 'https://cdn.jsdelivr.net/gh/keindev/string-lookup-manager/media/logo.svg';
 
     React.useEffect(() => {
         async function getPackages(): Promise<void> {
-            const res = await fetch('/api/get-packages?name=keindev');
-            const packages: PackageData[] = await res.json();
+            const res = await fetch('/api/get-packages?name=keindev&size=100');
+            const packages: IPackage[] = await res.json();
 
             setPackages(packages.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()));
         }
