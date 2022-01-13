@@ -26,7 +26,8 @@
     "analyze": "cross-env ANALYZE=true npm run build",
     "lint": "npm-run-all lint:*",
     "lint:next": "next lint",
-    "lint:spell": "cspell -c .vscode/cspell.json --no-summary \"README.md\" \"src/**/*.ts\""
+    "lint:spell": "cspell -c .vscode/cspell.json --no-summary \"README.md\" \"src/**/*.ts\"",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "12.0.8",
