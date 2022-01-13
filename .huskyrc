@@ -1,6 +1,0 @@
-{
-    "hooks": {
-        "pre-commit": "npm-run-all clean lint test",
-        "commit-msg": "changelog lint --message HUSKY_GIT_PARAMS --lowercase-only"
-    }
-}

@@ -1,56 +1,7 @@
 {
-    "language": "en",
-    "enabledLanguageIds": [
-        "css",
-        "dockerfile",
-        "dotenv",
-        "html",
-        "javascript",
-        "javascriptreact",
-        "json",
-        "jsonc",
-        "markdown",
-        "plaintext",
-        "restructuredtext",
-        "scss",
-        "shellscript",
-        "text",
-        "typescript",
-        "typescriptreact",
-        "yaml",
-        "yml"
-    ],
-    "ignorePaths": [
-        "**/package-lock.json",
-        "**/package.json",
-        "**/yarn.lock",
-        "**/node_modules/**",
-        "**/vscode-extension/**",
-        "**/.git/**",
-        "**/.vscode/**",
-        "**/.yarnclean",
-        "**/tsconfig.json",
-        "**/.eslintrc",
-        "**/.travis.yml",
-        "jest.config.js",
-        "jest.setup.js",
-        "CHANGELOG.md",
-        "LICENSE"
-    ],
-    "words": [
-        "keindev",
-        "pageview",
-        "clsx",
-        "prefetch",
-        "lato",
-        "helvetica",
-        "neue",
-        "arial",
-        "segoe",
-        "sourcerer",
-        "dribbble",
-        "daniil",
-        "ryazanov",
-        "tasktree"
-    ]
+  "language": "en",
+  "words": [
+    "keindev",
+    "vercel"
+  ]
 }
